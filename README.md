@@ -93,29 +93,80 @@ This Java program implements a console-based Tic-Tac-Toe game for two players. P
 ```
 $ java TicTacToe
 DO you want to play: (Y/N)
-Y
+y
 Do you want to be player X: (Y/N)
-Y
------------
- |   |   
------------
- |   |   
------------
- |   |
------------ 
 
-Player X, Enter your move: (row and column)
-1
-1
+y
 -----------
- |   |   
+   |    |   
 -----------
- | X |   
+   |    |   
 -----------
- |   |   
+   |    |   
 -----------
-...
 
+Player X , Enter your move: (row and column)
+1 1
+-----------
+   |    |   
+-----------
+   | X  |   
+-----------
+   |    |   
+-----------
+
+Player O , Enter your move: (row and column)
+1 2
+-----------
+   |    |   
+-----------
+   | X  | O 
+-----------
+   |    |   
+-----------
+
+Player X , Enter your move: (row and column)
+2 2
+-----------
+   |    |   
+-----------
+   | X  | O 
+-----------
+   |    | X 
+-----------
+
+Player O , Enter your move: (row and column)
+0 0
+-----------
+O  |    |   
+-----------
+   | X  | O 
+-----------
+   |    | X 
+-----------
+
+Player X , Enter your move: (row and column)
+0 2
+-----------
+O  |    | X 
+-----------
+   | X  | O 
+-----------
+   |    | X 
+-----------
+
+Player O , Enter your move: (row and column)
+1 0
+-----------
+O  |    | X 
+-----------
+O  | X  | O 
+-----------
+   |    | X 
+-----------
+
+Player X , Enter your move: (row and column)
+2 0
 Player X has won!!!!!
 Do you want to play Again: (Y/N)
 N
