@@ -122,7 +122,6 @@ N
 Thank you for playing.
 ```
 
----
 
 Feel free to refer this and build an console app , it is the first way to start building projects. 
 Btw, I'm making it for fun .. Happy coding!
