@@ -1,7 +1,7 @@
 
 # Tic-Tac-Toe Game in Java
 
-This is a simple implementation of the classic Tic-Tac-Toe game in Java. It allows two players to play the game on a console-based 3x3 grid.
+This Java program implements a console-based Tic-Tac-Toe game for two players. Players can choose their symbols ('X' or 'O') and take turns making moves on a 3x3 grid.
 
 ## Features
 
@@ -27,14 +27,46 @@ This is a simple implementation of the classic Tic-Tac-Toe game in Java. It allo
 - **Valid Input Checking:**
   - Ensures that player moves are within the valid range (0-2 for both row and column).
   - Prevents players from overwriting an already occupied space.
-
+  - Handles non-integer inputs gracefully and prompts for re-entry.
+  
+- **Alternate Player Turns:**
+  - Alternates turns between 'X' and 'O' after each valid move.
+  
 - **Game State Management:**
-  - Handles multiple rounds of gameplay using a loop until players choose to exit.
-  - Resets the board and necessary variables after each game to start fresh.
+  - Properly resets the board and game state after each round to start a new game.
+  - Manages game continuation and termination based on user input ('Y' or 'N').
 
-- **Winning Conditions:**
-  - Detects all possible winning combinations (rows, columns, diagonals).
-  - Declares the winner immediately upon fulfilling any winning condition.
+- **Comprehensive Winning Checks:**
+  - Checks all possible winning combinations:
+    - Horizontal lines (rows).
+    - Vertical lines (columns).
+    - Diagonal lines (both main and anti-diagonal).
+  - Immediately declares a winner upon detecting a winning condition.
+
+- **Handling Draw Conditions:**
+  - Detects when all spaces on the board are filled without any player achieving a win.
+  - Declares the game as a draw and ends the round.
+
+## Functions
+
+- **printBoard(char[][] board):**
+  - Prints the current state of the board, including separators and player moves.
+
+- **playerMove(char[][] board, char currentPlayer, Scanner sc):**
+  - Handles the logic for accepting and validating player moves.
+  - Prompts players to enter their moves and updates the board accordingly.
+
+- **checkGameOver(char[][] board, char player):**
+  - Checks the board for any winning combinations for the specified player.
+  - Returns true if the player has won, otherwise false.
+
+- **isBoardFull(char[][] board):**
+  - Checks if the board is completely filled with moves.
+  - Returns true if the board is full (draw condition), otherwise false.
+
+- **resetBoard(char[][] board):**
+  - Resets the board to its initial empty state (' ' for all cells).
+  - Called after each game to prepare for a new round.
 
 ## How to Use
 
@@ -69,7 +101,8 @@ Y
 -----------
  |   |   
 -----------
- |   |   
+ |   |
+----------- 
 
 Player X, Enter your move: (row and column)
 1
@@ -80,7 +113,7 @@ Player X, Enter your move: (row and column)
  | X |   
 -----------
  |   |   
-
+-----------
 ...
 
 Player X has won!!!!!
