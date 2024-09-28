@@ -1,7 +1,9 @@
 
-# Tic-Tac-Toe Game in Java
+# Tic-Tac-Toe Game
 
-This Java program implements a console-based Tic-Tac-Toe game for two players. Players can choose their symbols ('X' or 'O') and take turns making moves on a 3x3 grid.
+This program implements a console-based Tic-Tac-Toe game for two players. Players can choose their symbols ('X' or 'O') and take turns making moves on a 3x3 grid.
+
+## In both Java and C++ 
 
 ## Features
 
