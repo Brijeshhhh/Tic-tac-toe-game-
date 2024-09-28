@@ -3,7 +3,18 @@
 
 This program implements a console-based Tic-Tac-Toe game for two players. Players can choose their symbols ('X' or 'O') and take turns making moves on a 3x3 grid.
 
-## In both Java and C++ 
+## Tic Tac Toe game in Java and C++ 
+In comparing the Java and C++ versions of the Tic-Tac-Toe project:
+
+- **Arrays vs. Vectors**: In Java, `char[][]` is used for the board, which represents a 2D array. In C++, `vector<vector<char>>` is more commonly used for dynamic array management. Vectors handle memory allocation more efficiently in C++, while Java’s arrays are fixed in size.
+
+- **Input Handling**: Java uses `Scanner sc = new Scanner(System.in)` for reading inputs, whereas in C++, `cin` is the standard for user input. Both serve the same purpose but are implemented differently due to the language's input/output mechanisms.
+
+- **Looping and Logic**: The looping logic and conditional checks for user input, resetting the board, and checking for game over states remain largely the same in both languages. The transition is smooth since both Java and C++ support similar control structures like `for`, `while`, and `if`.
+
+- **Function Calls and Structure**: Both versions define functions for key operations such as printing the board, handling player moves, and checking the game state. However, C++ requires explicit declaration of functions before the `main` function, whereas Java does not need this when methods are inside the same class.
+
+Both languages maintain the same game logic but differ in syntax and standard library usage.
 
 ## Features
 
