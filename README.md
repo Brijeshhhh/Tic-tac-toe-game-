@@ -82,14 +82,41 @@ Both languages maintain the same game logic but differ in syntax and standard li
   - Called after each game to prepare for a new round.
 
 ## How to Use
+---
 
+### Java:
 1. **Setup:**
    - Clone the repository to your local machine.
-   - Compile the `TicTacToe.java` file using `javac TicTacToe.java`.
+   - Compile the `TicTacToe.java` file using:
+     ```bash
+     javac TicTacToe.java
+     ```
 
 2. **Run the Game:**
-   - Execute the compiled Java program using `java TicTacToe`.
+   - Execute the compiled Java program using:
+     ```bash
+     java TicTacToe
+     ```
    - Follow the prompts on the console to play the game.
+
+---
+
+### C++:
+1. **Setup:**
+   - Clone the repository to your local machine.
+   - Compile the `TicTacToe.cpp` file using a C++ compiler, such as `g++`:
+     ```bash
+     g++ TicTacToe.cpp -o TicTacToe
+     ```
+
+2. **Run the Game:**
+   - Run the compiled C++ program using:
+     ```bash
+     ./TicTacToe
+     ```
+   - Follow the prompts on the console to play the game.
+
+---
 
 3. **Gameplay:**
    - Enter 'Y' to start playing.
